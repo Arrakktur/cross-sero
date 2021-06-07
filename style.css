@@ -1,0 +1,106 @@
+body{
+    font-size: 18px;
+    background: #F2C94C;
+    width: 100%;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 600;
+}
+
+.game{
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 283px;
+}
+
+#status{
+    position: relative;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+#tryAgain{
+    display: none;
+    position: absolute;
+    bottom: -16px;
+    left: 60px;
+    cursor: pointer;
+}
+
+#time{
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: 80px;
+}
+
+#board{
+    margin-left: 37px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+#board .block{
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    border-right: 5px solid #BFA148;
+    border-bottom: 5px solid #BFA148;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+#board .block:nth-child(3n){
+    border-right: none;
+}
+
+#board .block:nth-child(7),#board .block:nth-child(8),#board .block:nth-child(9){
+    border-bottom: none;
+}
+
+.block:hover{
+    background: #BFA148;
+}
+
+#firstStep{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.switch{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.formRadio label.active:before{
+    background: #000;
+    color: #F2C94C;
+}
+
+.formRadio label:before{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.formRadio1 label:before{
+    content: "X";
+}
+
+.formRadio2 label:before{
+    content: "O";
+}
+
+#score{
+    font-size: 32px;
+    line-height: 39px;
+}
